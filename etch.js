@@ -12,10 +12,10 @@ container.setAttribute("class", "container");
 
 
 
-
 //array with 16x16 divs
-let divs = [
-    createDiv("div1"),
+
+  divs = [
+    createDiv("div1"),    
     createDiv("div2"),
     createDiv("div3"),
     createDiv("div4"),
@@ -76,9 +76,204 @@ let divs = [
     createDiv("div59"),
     createDiv("div60"),
     createDiv("div61"),
-    createDiv("div62")
-    
-];
+    createDiv("div62"),
+    createDiv("div63"),    
+    createDiv("div64"),
+    createDiv("div65"),
+    createDiv("div66"),
+    createDiv("div67"),
+    createDiv("div68"),
+    createDiv("div69"),
+    createDiv("div70"),
+    createDiv("div71"),
+    createDiv("div72"),
+    createDiv("div73"),
+    createDiv("div74"),
+    createDiv("div75"),
+    createDiv("div76"),
+    createDiv("div77"),
+    createDiv("div78"),
+    createDiv("div79"),
+    createDiv("div80"),
+    createDiv("div81"),
+    createDiv("div82"),
+    createDiv("div83"),
+    createDiv("div84"),
+    createDiv("div85"),
+    createDiv("div86"),
+    createDiv("div87"),
+    createDiv("div88"),
+    createDiv("div89"),
+    createDiv("div90"),
+    createDiv("div91"),
+    createDiv("div92"),
+    createDiv("div93"),
+    createDiv("div94"),
+    createDiv("div95"),
+    createDiv("div96"),
+    createDiv("div97"),
+    createDiv("div98"),
+    createDiv("div99"),
+    createDiv("div100"),
+    createDiv("div101"),
+    createDiv("div102"),
+    createDiv("div103"),
+    createDiv("div104"),
+    createDiv("div105"),
+    createDiv("div106"),
+    createDiv("div107"),
+    createDiv("div108"),
+    createDiv("div109"),
+    createDiv("div110"),
+    createDiv("div111"),
+    createDiv("div112"),
+    createDiv("div113"),
+    createDiv("div114"),
+    createDiv("div115"),
+    createDiv("div116"),
+    createDiv("div117"),
+    createDiv("div118"),
+    createDiv("div119"),
+    createDiv("div120"),
+    createDiv("div121"),
+    createDiv("div122"),
+    createDiv("div123"),
+    createDiv("div124"),
+    createDiv("div125"),    
+    createDiv("div126"),
+    createDiv("div127"),
+    createDiv("div128"),
+    createDiv("div129"),
+    createDiv("div130"),
+    createDiv("div131"),
+    createDiv("div132"),
+    createDiv("div133"),
+    createDiv("div134"),
+    createDiv("div135"),
+    createDiv("div136"),
+    createDiv("div137"),
+    createDiv("div138"),
+    createDiv("div139"),
+    createDiv("div140"),
+    createDiv("div141"),
+    createDiv("div142"),
+    createDiv("div143"),
+    createDiv("div144"),
+    createDiv("div145"),
+    createDiv("div146"),
+    createDiv("div147"),
+    createDiv("div148"),
+    createDiv("div149"),
+    createDiv("div150"),
+    createDiv("div151"),
+    createDiv("div152"),
+    createDiv("div153"),
+    createDiv("div154"),
+    createDiv("div155"),
+    createDiv("div156"),
+    createDiv("div157"),
+    createDiv("div158"),
+    createDiv("div159"),
+    createDiv("div160"),
+    createDiv("div161"),
+    createDiv("div162"),
+    createDiv("div163"),
+    createDiv("div164"),
+    createDiv("div165"),
+    createDiv("div166"),
+    createDiv("div167"),
+    createDiv("div168"),
+    createDiv("div169"),
+    createDiv("div170"),
+    createDiv("div171"),
+    createDiv("div172"),
+    createDiv("div173"),
+    createDiv("div174"),
+    createDiv("div175"),
+    createDiv("div176"),
+    createDiv("div177"),
+    createDiv("div178"),
+    createDiv("div179"),
+    createDiv("div180"),
+    createDiv("div181"),
+    createDiv("div182"),
+    createDiv("div183"),
+    createDiv("div184"),
+    createDiv("div185"),
+    createDiv("div186"),
+    createDiv("div187"),    
+    createDiv("div188"),
+    createDiv("div189"),
+    createDiv("div190"),
+    createDiv("div191"),
+    createDiv("div192"),
+    createDiv("div193"),
+    createDiv("div194"),
+    createDiv("div195"),
+    createDiv("div196"),
+    createDiv("div197"),
+    createDiv("div198"),
+    createDiv("div199"),
+    createDiv("div200"),
+    createDiv("div201"),
+    createDiv("div202"),
+    createDiv("div203"),
+    createDiv("div204"),
+    createDiv("div205"),
+    createDiv("div206"),
+    createDiv("div207"),
+    createDiv("div208"),
+    createDiv("div209"),
+    createDiv("div210"),
+    createDiv("div212"),
+    createDiv("div213"),
+    createDiv("div214"),
+    createDiv("div215"),
+    createDiv("div216"),
+    createDiv("div217"),
+    createDiv("div218"),
+    createDiv("div219"),
+    createDiv("div220"),
+    createDiv("div221"),
+    createDiv("div222"),
+    createDiv("div223"),
+    createDiv("div224"),
+    createDiv("div225"),
+    createDiv("div226"),
+    createDiv("div227"),
+    createDiv("div228"),
+    createDiv("div229"),
+    createDiv("div230"),
+    createDiv("div231"),
+    createDiv("div232"),
+    createDiv("div233"),
+    createDiv("div234"),
+    createDiv("div235"),
+    createDiv("div236"),
+    createDiv("div237"),
+    createDiv("div238"),
+    createDiv("div239"),
+    createDiv("div240"),
+    createDiv("div241"),
+    createDiv("div242"),
+    createDiv("div243"),
+    createDiv("div244"),
+    createDiv("div245"),
+    createDiv("div246"),
+    createDiv("div247"),
+    createDiv("div248"),
+    createDiv("div248"),
+    createDiv("div249"),
+    createDiv("div250"),
+    createDiv("div251"),
+    createDiv("div252"),
+    createDiv("div253"),
+    createDiv("div254"),
+    createDiv("div255"),
+    createDiv("div256")
+   
+  ];
+
 
 //function that creates div element and class for each one
 function createDiv(text) {
@@ -86,23 +281,26 @@ function createDiv(text) {
     div.setAttribute("class", "box");
     div.appendChild(document.createTextNode(text));
     return div;
+    }
 
-}
 
 //loop to add the 16x16 divs to the fragment & add to container
-for(let i = 0; i < divs.length; i++){
+for (let i = 0; i < divs.length; i++){
     container.appendChild(divs[i]);
-    //fragment.appendChild(divs[i]);     
+         
 }
-
-//appending fragment with the divs to the body
-//document.body.appendChild(fragment);
 
 //appending the container to the body
 document.body.appendChild(container);
 
 
-
+//adds eventlistener to mousehover and changes divs BG color
+const hover = document.getElementsByClassName("box");
+for(const loop of hover) {   
+    loop.addEventListener("mouseover", ()=> {
+        loop.setAttribute("style", "background-color:blue;");
+    });
+}
 
 
 
