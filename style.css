@@ -1,17 +1,30 @@
-body {
-    height: 100vh;
-    margin: 0px;
-}
-.container {
-    height: 100%;
+#Divs {
+    height: 896px;
+    width: 896px; 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
 }
 
 .box {
-    width: 120px;
-    height: auto;
+    border-style: solid;
+    box-sizing: border-box;
+    width: 100%;   
+}
+
+div {
+flex-grow: 1;  
+min-width: 0;
+aspect-ratio: 1 / 1; 
+}
+   
+#bttn {
+    
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    background-color: rgb(241, 71, 19);
+    font-size: 20px;
+    border-color: black;
+    cursor: pointer;
     
 }
+

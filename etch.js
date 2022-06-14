@@ -1,307 +1,75 @@
-//get body element to add to it
-//const body = document.body
-
-//document fragment to add all the divs to add that to container and that to body
-const fragment = document.createDocumentFragment();
-
-//container for the divs W/ class 
+//container for the divs W/ ID 
 const container = document.createElement("div");
-container.setAttribute("class", "container");
+container.id = "Divs";
 
 
-
-
-
-//array with 16x16 divs
-
-  divs = [
-    createDiv("div1"),    
-    createDiv("div2"),
-    createDiv("div3"),
-    createDiv("div4"),
-    createDiv("div5"),
-    createDiv("div6"),
-    createDiv("div7"),
-    createDiv("div8"),
-    createDiv("div9"),
-    createDiv("div10"),
-    createDiv("div11"),
-    createDiv("div12"),
-    createDiv("div13"),
-    createDiv("div14"),
-    createDiv("div15"),
-    createDiv("div16"),
-    createDiv("div17"),
-    createDiv("div18"),
-    createDiv("div19"),
-    createDiv("div20"),
-    createDiv("div21"),
-    createDiv("div22"),
-    createDiv("div23"),
-    createDiv("div24"),
-    createDiv("div25"),
-    createDiv("div26"),
-    createDiv("div27"),
-    createDiv("div28"),
-    createDiv("div29"),
-    createDiv("div30"),
-    createDiv("div31"),
-    createDiv("div32"),
-    createDiv("div33"),
-    createDiv("div34"),
-    createDiv("div35"),
-    createDiv("div36"),
-    createDiv("div37"),
-    createDiv("div38"),
-    createDiv("div39"),
-    createDiv("div40"),
-    createDiv("div41"),
-    createDiv("div42"),
-    createDiv("div43"),
-    createDiv("div44"),
-    createDiv("div45"),
-    createDiv("div46"),
-    createDiv("div47"),
-    createDiv("div48"),
-    createDiv("div49"),
-    createDiv("div50"),
-    createDiv("div51"),
-    createDiv("div52"),
-    createDiv("div53"),
-    createDiv("div54"),
-    createDiv("div55"),
-    createDiv("div56"),
-    createDiv("div57"),
-    createDiv("div58"),
-    createDiv("div59"),
-    createDiv("div60"),
-    createDiv("div61"),
-    createDiv("div62"),
-    createDiv("div63"),    
-    createDiv("div64"),
-    createDiv("div65"),
-    createDiv("div66"),
-    createDiv("div67"),
-    createDiv("div68"),
-    createDiv("div69"),
-    createDiv("div70"),
-    createDiv("div71"),
-    createDiv("div72"),
-    createDiv("div73"),
-    createDiv("div74"),
-    createDiv("div75"),
-    createDiv("div76"),
-    createDiv("div77"),
-    createDiv("div78"),
-    createDiv("div79"),
-    createDiv("div80"),
-    createDiv("div81"),
-    createDiv("div82"),
-    createDiv("div83"),
-    createDiv("div84"),
-    createDiv("div85"),
-    createDiv("div86"),
-    createDiv("div87"),
-    createDiv("div88"),
-    createDiv("div89"),
-    createDiv("div90"),
-    createDiv("div91"),
-    createDiv("div92"),
-    createDiv("div93"),
-    createDiv("div94"),
-    createDiv("div95"),
-    createDiv("div96"),
-    createDiv("div97"),
-    createDiv("div98"),
-    createDiv("div99"),
-    createDiv("div100"),
-    createDiv("div101"),
-    createDiv("div102"),
-    createDiv("div103"),
-    createDiv("div104"),
-    createDiv("div105"),
-    createDiv("div106"),
-    createDiv("div107"),
-    createDiv("div108"),
-    createDiv("div109"),
-    createDiv("div110"),
-    createDiv("div111"),
-    createDiv("div112"),
-    createDiv("div113"),
-    createDiv("div114"),
-    createDiv("div115"),
-    createDiv("div116"),
-    createDiv("div117"),
-    createDiv("div118"),
-    createDiv("div119"),
-    createDiv("div120"),
-    createDiv("div121"),
-    createDiv("div122"),
-    createDiv("div123"),
-    createDiv("div124"),
-    createDiv("div125"),    
-    createDiv("div126"),
-    createDiv("div127"),
-    createDiv("div128"),
-    createDiv("div129"),
-    createDiv("div130"),
-    createDiv("div131"),
-    createDiv("div132"),
-    createDiv("div133"),
-    createDiv("div134"),
-    createDiv("div135"),
-    createDiv("div136"),
-    createDiv("div137"),
-    createDiv("div138"),
-    createDiv("div139"),
-    createDiv("div140"),
-    createDiv("div141"),
-    createDiv("div142"),
-    createDiv("div143"),
-    createDiv("div144"),
-    createDiv("div145"),
-    createDiv("div146"),
-    createDiv("div147"),
-    createDiv("div148"),
-    createDiv("div149"),
-    createDiv("div150"),
-    createDiv("div151"),
-    createDiv("div152"),
-    createDiv("div153"),
-    createDiv("div154"),
-    createDiv("div155"),
-    createDiv("div156"),
-    createDiv("div157"),
-    createDiv("div158"),
-    createDiv("div159"),
-    createDiv("div160"),
-    createDiv("div161"),
-    createDiv("div162"),
-    createDiv("div163"),
-    createDiv("div164"),
-    createDiv("div165"),
-    createDiv("div166"),
-    createDiv("div167"),
-    createDiv("div168"),
-    createDiv("div169"),
-    createDiv("div170"),
-    createDiv("div171"),
-    createDiv("div172"),
-    createDiv("div173"),
-    createDiv("div174"),
-    createDiv("div175"),
-    createDiv("div176"),
-    createDiv("div177"),
-    createDiv("div178"),
-    createDiv("div179"),
-    createDiv("div180"),
-    createDiv("div181"),
-    createDiv("div182"),
-    createDiv("div183"),
-    createDiv("div184"),
-    createDiv("div185"),
-    createDiv("div186"),
-    createDiv("div187"),    
-    createDiv("div188"),
-    createDiv("div189"),
-    createDiv("div190"),
-    createDiv("div191"),
-    createDiv("div192"),
-    createDiv("div193"),
-    createDiv("div194"),
-    createDiv("div195"),
-    createDiv("div196"),
-    createDiv("div197"),
-    createDiv("div198"),
-    createDiv("div199"),
-    createDiv("div200"),
-    createDiv("div201"),
-    createDiv("div202"),
-    createDiv("div203"),
-    createDiv("div204"),
-    createDiv("div205"),
-    createDiv("div206"),
-    createDiv("div207"),
-    createDiv("div208"),
-    createDiv("div209"),
-    createDiv("div210"),
-    createDiv("div212"),
-    createDiv("div213"),
-    createDiv("div214"),
-    createDiv("div215"),
-    createDiv("div216"),
-    createDiv("div217"),
-    createDiv("div218"),
-    createDiv("div219"),
-    createDiv("div220"),
-    createDiv("div221"),
-    createDiv("div222"),
-    createDiv("div223"),
-    createDiv("div224"),
-    createDiv("div225"),
-    createDiv("div226"),
-    createDiv("div227"),
-    createDiv("div228"),
-    createDiv("div229"),
-    createDiv("div230"),
-    createDiv("div231"),
-    createDiv("div232"),
-    createDiv("div233"),
-    createDiv("div234"),
-    createDiv("div235"),
-    createDiv("div236"),
-    createDiv("div237"),
-    createDiv("div238"),
-    createDiv("div239"),
-    createDiv("div240"),
-    createDiv("div241"),
-    createDiv("div242"),
-    createDiv("div243"),
-    createDiv("div244"),
-    createDiv("div245"),
-    createDiv("div246"),
-    createDiv("div247"),
-    createDiv("div248"),
-    createDiv("div248"),
-    createDiv("div249"),
-    createDiv("div250"),
-    createDiv("div251"),
-    createDiv("div252"),
-    createDiv("div253"),
-    createDiv("div254"),
-    createDiv("div255"),
-    createDiv("div256")
-   
-  ];
-
-
-//function that creates div element and class for each one
-function createDiv(text) {
-    let div = document.createElement("div");
-    div.setAttribute("class", "box");
-    div.appendChild(document.createTextNode(text));
-    return div;
-    }
-
-
-//loop to add the 16x16 divs to the fragment & add to container
-for (let i = 0; i < divs.length; i++){
-    container.appendChild(divs[i]);
-         
-}
-
-//appending the container to the body
+//append the container to the body
 document.body.appendChild(container);
 
+//ideclaring & initializing variables
+  let squaresPS = 16;
+  //let height = 16;
+  
+//function that creates div element and class for each one & adds it to container
+function createDiv(text) {
+    for(let i = 0; i < squaresPS; i++) {
+        const divWidth = document.createElement("div");
+        container.appendChild(divWidth);
+        for(let j = 0; j < squaresPS; j++){
+            const divHeight = document.createElement("div");
+            divHeight.className = "box";
+            divWidth.appendChild(divHeight);
+        
+            }
+        }
+    }
+createDiv();
 
-//adds eventlistener to mousehover and changes divs BG color
+// adding eventlistener to .boxes 
 const hover = document.getElementsByClassName("box");
-for(const loop of hover) {   
+for(const loop of hover) {
     loop.addEventListener("mouseover", ()=> {
         loop.setAttribute("style", "background-color:blue;");
-    });
+    })
 }
 
 
+//same above except its a function for when the button is clicked
+function clickMe () {
+ const hover2 = document.getElementsByClassName("box");
+    for(const loop of hover2) {   
+        loop.addEventListener("mouseover", ()=> {
+            loop.setAttribute("style", "background-color:blue;");
+            });
+     }
+}
+
+//button that changes grid size to user input and adds changing color to the divs bg
+ const button = document.createElement("button");
+ button.id = "bttn";
+ button.textContent = "Grid Size";
+ button.addEventListener("click", function () {
+     squaresPS = prompt("Enter desired squares per side");
+    if (squaresPS > 100) {
+        alert("The max size is 100, please try again");
+        return;
+    } else if (squaresPS < 1){
+        alert("Size has to be at least 1");
+        return;
+    } else {
+        let div2 = document.getElementById("Divs"); //Removes all divs for new grid
+        
+        while (div2.firstChild) {
+            div2.removeChild(div2.firstChild);
+        }
+         //making new divs for new grid
+            createDiv();
+            clickMe();
+    }
+
+ });
+ document.body.appendChild(button);
+
+ 
 
 
